@@ -1,4 +1,4 @@
-//[problem link](https://leetcode.com/problems/maximum-number-of-removable-characters/description/) 
+[link](https://leetcode.com/problems/maximum-number-of-removable-characters/description/)
 class Solution {
     public int maximumRemovals(String s, String p, int[] r) {
         char[] str = s.toCharArray();
