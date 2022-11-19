@@ -19,10 +19,10 @@ class Solution {
             return dp[startPos+1000][k];
         }
         
-        int right = helper(startPos+1, endPos, k-1) ;
-        int left = helper(startPos-1, endPos, k-1) ;
+        int forward = helper(startPos+1, endPos, k-1) ;
+        int backward = helper(startPos-1, endPos, k-1) ;
         
-        ans = (left+right)%((int)1e9+7);
+        ans = (backward+forward)%((int)1e9+7);
         dp[startPos+1000][k] = ans;
         return dp[startPos+1000][k];
     }
