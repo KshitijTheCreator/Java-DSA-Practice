@@ -1,4 +1,7 @@
 //https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/
+
+//WE CANNOT USE SIMPLE SLIDING WINDOW TECHNIQUE AS THE NEGATIVE OCCOURANCE IS ALSO PRESENT SO THE DEQUE DATASTRUCTURE IS PREFERRED.
+
 class Solution {
     public int shortestSubarray(int[] nums, int k) {
         long[] prefixSum= new long[nums.length+1];
